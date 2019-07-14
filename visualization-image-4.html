@@ -20,7 +20,7 @@
 <!-- Navbar element -->
 <div class="navigation">
    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
-     <a class="navbar-brand" href="home.html">NYPD COLLISION DATA VISUALIZATION</a>
+     <a class="navbar-brand" href="index.html">NYPD COLLISION DATA VISUALIZATION</a>
      <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
@@ -32,7 +32,7 @@
              aria-haspopup="true" aria-expanded="false" style="color: #DAE9EC">Plots
            </a>
            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						 <a class="dropdown-item" href="visualization-image-1.html">Injuries by Borough</a>
+             <a class="dropdown-item" href="visualization-image-1.html">Injuries by Borough</a>
              <a class="dropdown-item" href="visualization-image-2.html">Deaths by Borough</a>
              <a class="dropdown-item" href="visualization-image-3.html">Injuries Trend by Year</a>
              <a class="dropdown-item" href="visualization-image-4.html">Deaths Trend by Year</a>
@@ -53,40 +53,37 @@
 	    <div class="content">
             <div class="container-fluid">
                 <div class="row">
-                	<div class="col-md-12">
-                		<div class="box">
-                    		<div class="header">
-                    			<h3 class="title">Comparison: Cyclist and Pedestrian Safety</h3>
-	              				<p class="category">Click any plot to get in_depth analysis.</p>
-	              			</div>
-                    		<div class="content">
-                        		<div class="row">
-                        			<div class="col-xs-12 col-sm-12 col-md-6">
-	                					<h3>Injuries by Borough</h3>
-	              						<a href="./visualization-image-1.html"><img class="img-fluid" src="../Resources/Assets/Images/injuries_by_boro.png" alt="Injuries by Borough" height="400" width="800"></a>
-	           						</div>
-	           						<div class="col-xs-12 col-sm-12 col-md-6">
-	              						<h3>Deaths by Borough</h3>
-	              						<a href="./visualization-image-2.html"><img class="img-fluid" src="../Resources/Assets/Images/deaths_by_boro.png" alt="Deaths by Borough" height="400" width="800"></a>
-	           						</div>
-	            					<div class="col-xs-12 col-sm-12 col-md-6">
-	               						<h3>Injuries Trend by Year</h3>
-	               						<a href="./visualization-image-3.html"><img class="img-fluid" src="../Resources/Assets/Images/injuries_trend_by_year.png" alt="Injuries Trend by Year" height="400" width="800"></a>
-	            					</div>
-	            					<div class="col-xs-12 col-sm-12 col-md-6">
-	               						<h3>Deaths Trend by Year</h3>
-								 		<a href="./visualization-image-4.html"><img class="img-fluid" src="../Resources/Assets/Images/deaths_trend_by_year.png" alt="Deaths Trend by Year" height="400" width="800"></a>
-									</div>
-	          					</div>
-	          				</div>
-	          			</div>
-					</div>
-				</div>
+                    <div class="col-sm-12 col-md-8">
+                        <div class="box">
+                            <div class="header">
+                                <h1 class="title">Injuries by Borough</h1>
+                            </div>
+                            <div class="content">
+                               <img src="Resources/Assets/Images/deaths_trend_by_year.png" alt="Deaths Trend by Year" height="400" width="800" class="img-responsive">
+	                           <p class="category">On January 15, 2014, Mayor de Blasio announced the launch of Vision Zero in New York City, based on a similar program of the same name that was implemented in Sweden. The original Swedish theory hypothesizes that pedestrian deaths are not as much "accidents" as they are a failure of street design. Traffic injuries and traffic crashes in New York City under Mayor de Blasio have remained steady changed from when the Mayor implemented the plan through 2018, though deaths have decreased. However, this trend does not hold for cylists. Through July 2019, there have been 11 cylcist deaths compared to 11 for all of 2018.
+	                           </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <div class="box">
+                            <div class="header">
+                                <h3 class="title">Visualizations</h3>
+                            </div>
+                            <div class="content">
+															<a href="./visualization-image-1.html"><img src="Resources/Assets/Images/injuries_by_boro.png" alt="Injuries by Borough" height="110" width="220"></a>
+ 			                       <a href="./visualization-image-2.html"><img src="Resources/Assets/Images/deaths_by_boro.png" alt="Deaths by Borough" height="110" width="220"></a>
+ 			                       <a href="./visualization-image-3.html"><img src="Resources/Assets/Images/injuries_trend_by_year.png" alt="Injuries Trend by Year" height="110" width="220"></a>
+ 			                       <a href="./visualization-image-4.html"><img src="Resources/Assets/Images/deaths_trend_by_year.png" alt="Deaths Trend by Year" height="110" width="220"></a>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
 			</div>
 		</div>
 	</div>
 </body>
-
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
