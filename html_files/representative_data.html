@@ -1,0 +1,2707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>NYPD Collision Data Visualization</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!--CSS Link-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Navigation Section -->
+<!-- Navbar element -->
+<div class="navigation">
+   <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
+     <a class="navbar-brand" href="home.html">NYPD COLLISION DATA VISUALIZATION</a>
+     <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+       <ul class="navbar-nav ml-auto">
+         <li class="nav-item dropdown">
+           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="false" style="color: #DAE9EC">Plots
+           </a>
+           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+             <a class="dropdown-item" href="visualization-image-1.html">Injuries by Borough</a>
+             <a class="dropdown-item" href="visualization-image-2.html">Deaths by Borough</a>
+             <a class="dropdown-item" href="visualization-image-3.html">Injuries Trend by Year</a>
+             <a class="dropdown-item" href="visualization-image-4.html">Deaths Trend by Year</a>
+           </div>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="comparisons.html">Comparison</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="representative_data.html">Data</a>
+         </li>
+
+       </ul>
+     </div>
+   </nav>
+ </div>
+
+	    <div class="content">
+        	<div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="box">
+                            <div class="page-header">
+                                <h3 class="title">Representative Data</h3>
+                                <p class="category">The following table contains representative data taken from the larger dataset used for this project.</p>
+                            </div>
+                            <div class="content table-responsive table-full-width">
+                                <table class="table table-hover table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>UNIQUE KEY</th>
+      <th>DATE</th>
+      <th>TIME</th>
+      <th>BOROUGH</th>
+      <th>ZIP CODE</th>
+      <th>LATITUDE</th>
+      <th>LONGITUDE</th>
+      <th>LOCATION</th>
+      <th>ON STREET NAME</th>
+      <th>CROSS STREET NAME</th>
+      <th>NUMBER OF PERSONS INJURED</th>
+      <th>NUMBER OF PERSONS KILLED</th>
+      <th>NUMBER OF PEDESTRIANS INJURED</th>
+      <th>NUMBER OF PEDESTRIANS KILLED</th>
+      <th>NUMBER OF CYCLIST INJURED</th>
+      <th>NUMBER OF CYCLIST KILLED</th>
+      <th>NUMBER OF MOTORIST INJURED</th>
+      <th>NUMBER OF MOTORIST KILLED</th>
+      <th>CONTRIBUTING FACTOR VEHICLE 1</th>
+      <th>CONTRIBUTING FACTOR VEHICLE 2</th>
+      <th>VEHICLE TYPE CODE 1</th>
+      <th>VEHICLE TYPE CODE 2</th>
+      <th>YEAR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>844643</th>
+      <td>3310180</td>
+      <td>2015-09-30</td>
+      <td>12:00</td>
+      <td>QUEENS</td>
+      <td>11422</td>
+      <td>40.652565</td>
+      <td>-73.746549</td>
+      <td>40.6525646, -73.746549</td>
+      <td>BROOKVILLE BOULEVARD</td>
+      <td>149 AVENUE</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>NaN</td>
+      <td>2015</td>
+    </tr>
+    <tr>
+      <th>254370</th>
+      <td>3893632</td>
+      <td>2018-05-02</td>
+      <td>18:24</td>
+      <td>MANHATTAN</td>
+      <td>10002</td>
+      <td>40.720020</td>
+      <td>-73.982666</td>
+      <td>40.72002, -73.982666</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>NaN</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>1506029</th>
+      <td>172653</td>
+      <td>2012-07-18</td>
+      <td>14:55</td>
+      <td>BROOKLYN</td>
+      <td>11213</td>
+      <td>40.669402</td>
+      <td>-73.942197</td>
+      <td>40.6694023, -73.9421971</td>
+      <td>EASTERN PARKWAY</td>
+      <td>KINGSTON AVENUE</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>UNKNOWN</td>
+      <td>2012</td>
+    </tr>
+    <tr>
+      <th>158724</th>
+      <td>3990558</td>
+      <td>2018-09-25</td>
+      <td>15:11</td>
+      <td>MANHATTAN</td>
+      <td>10036</td>
+      <td>40.755470</td>
+      <td>-73.985600</td>
+      <td>40.75547, -73.9856</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Station Wagon/Sport Utility Vehicle</td>
+      <td>Bus</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>1303852</th>
+      <td>146421</td>
+      <td>2013-07-21</td>
+      <td>17:40</td>
+      <td>BROOKLYN</td>
+      <td>11236</td>
+      <td>40.644852</td>
+      <td>-73.911117</td>
+      <td>40.6448524, -73.9111168</td>
+      <td>REMSEN AVENUE</td>
+      <td>FOSTER AVENUE</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>NaN</td>
+      <td>2013</td>
+    </tr>
+    <tr>
+      <th>1162658</th>
+      <td>314186</td>
+      <td>2014-04-02</td>
+      <td>8:32</td>
+      <td>BROOKLYN</td>
+      <td>11232</td>
+      <td>40.650981</td>
+      <td>-74.018552</td>
+      <td>40.6509814, -74.0185524</td>
+      <td>49 STREET</td>
+      <td>1 AVENUE</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>Driver Inattention/Distraction</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>VAN</td>
+      <td>2014</td>
+    </tr>
+    <tr>
+      <th>381620</th>
+      <td>3766143</td>
+      <td>2017-10-09</td>
+      <td>8:40</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>40.699627</td>
+      <td>-73.923836</td>
+      <td>40.699627, -73.923836</td>
+      <td>WILSON AVENUE</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Passing Too Closely</td>
+      <td>NaN</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>NaN</td>
+      <td>2017</td>
+    </tr>
+    <tr>
+      <th>559547</th>
+      <td>3588767</td>
+      <td>2016-12-29</td>
+      <td>5:29</td>
+      <td>MANHATTAN</td>
+      <td>10035</td>
+      <td>40.802753</td>
+      <td>-73.933580</td>
+      <td>40.802753, -73.93358</td>
+      <td>EAST 125 STREET</td>
+      <td>2 AVENUE</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2016</td>
+    </tr>
+    <tr>
+      <th>1095394</th>
+      <td>999846</td>
+      <td>2014-07-27</td>
+      <td>18:50</td>
+      <td>BROOKLYN</td>
+      <td>11229</td>
+      <td>40.608573</td>
+      <td>-73.955334</td>
+      <td>40.6085727, -73.955334</td>
+      <td>QUENTIN ROAD</td>
+      <td>EAST 18 STREET</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>2014</td>
+    </tr>
+    <tr>
+      <th>619363</th>
+      <td>3527799</td>
+      <td>2016-09-26</td>
+      <td>16:20</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>40.716000</td>
+      <td>-73.745460</td>
+      <td>40.716, -73.74546</td>
+      <td>HEMPSTEAD AVENUE</td>
+      <td>JAMAICA AVENUE</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2016</td>
+    </tr>
+    <tr>
+      <th>1324283</th>
+      <td>24155</td>
+      <td>2013-06-16</td>
+      <td>17:00</td>
+      <td>MANHATTAN</td>
+      <td>10010</td>
+      <td>40.736165</td>
+      <td>-73.978909</td>
+      <td>40.7361648, -73.9789088</td>
+      <td>1 AVENUE</td>
+      <td>EAST 22 STREET</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>MOTORCYCLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2013</td>
+    </tr>
+    <tr>
+      <th>806011</th>
+      <td>3344622</td>
+      <td>2015-12-01</td>
+      <td>10:55</td>
+      <td>BROOKLYN</td>
+      <td>11204</td>
+      <td>40.627573</td>
+      <td>-73.976576</td>
+      <td>40.627573, -73.9765763</td>
+      <td>MC DONALD AVENUE</td>
+      <td>FOSTER AVENUE</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>VAN</td>
+      <td>BICYCLE</td>
+      <td>2015</td>
+    </tr>
+    <tr>
+      <th>1478774</th>
+      <td>135697</td>
+      <td>2012-09-06</td>
+      <td>15:00</td>
+      <td>BROOKLYN</td>
+      <td>11203</td>
+      <td>40.651006</td>
+      <td>-73.945705</td>
+      <td>40.6510057, -73.9457051</td>
+      <td>CHURCH AVENUE</td>
+      <td>EAST 34 STREET</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>UNKNOWN</td>
+      <td>2012</td>
+    </tr>
+    <tr>
+      <th>658364</th>
+      <td>3489226</td>
+      <td>2016-07-27</td>
+      <td>13:30</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>40.747845</td>
+      <td>-73.977240</td>
+      <td>40.747845, -73.97724</td>
+      <td>EAST 37 STREET</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>Driver Inattention/Distraction</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>MOTORCYCLE</td>
+      <td>2016</td>
+    </tr>
+    <tr>
+      <th>457527</th>
+      <td>3691212</td>
+      <td>2017-06-14</td>
+      <td>9:57</td>
+      <td>MANHATTAN</td>
+      <td>10033</td>
+      <td>40.848682</td>
+      <td>-73.939224</td>
+      <td>40.848682, -73.939224</td>
+      <td>FORT WASHINGTON AVENUE</td>
+      <td>WEST 178 STREET</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PICK-UP TRUCK</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2017</td>
+    </tr>
+    <tr>
+      <th>594883</th>
+      <td>3556456</td>
+      <td>2016-11-03</td>
+      <td>17:04</td>
+      <td>MANHATTAN</td>
+      <td>10016</td>
+      <td>40.745300</td>
+      <td>-73.986855</td>
+      <td>40.7453, -73.986855</td>
+      <td>EAST 29 STREET</td>
+      <td>5 AVENUE</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2016</td>
+    </tr>
+    <tr>
+      <th>352658</th>
+      <td>3794868</td>
+      <td>2017-11-21</td>
+      <td>22:18</td>
+      <td>MANHATTAN</td>
+      <td>10022</td>
+      <td>40.758743</td>
+      <td>-73.968630</td>
+      <td>40.758743, -73.96863</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Driver Inattention/Distraction</td>
+      <td>NaN</td>
+      <td>TAXI</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>2017</td>
+    </tr>
+    <tr>
+      <th>1285464</th>
+      <td>186621</td>
+      <td>2013-08-23</td>
+      <td>10:50</td>
+      <td>BROOKLYN</td>
+      <td>11221</td>
+      <td>40.689073</td>
+      <td>-73.921306</td>
+      <td>40.6890727, -73.9213057</td>
+      <td>PALMETTO STREET</td>
+      <td>BROADWAY</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>SMALL COM VEH(4 TIRES)</td>
+      <td>NaN</td>
+      <td>2013</td>
+    </tr>
+    <tr>
+      <th>328168</th>
+      <td>3820224</td>
+      <td>2017-12-29</td>
+      <td>12:30</td>
+      <td>QUEENS</td>
+      <td>11434</td>
+      <td>40.679337</td>
+      <td>-73.777830</td>
+      <td>40.679337, -73.77783</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Backing Unsafely</td>
+      <td>NaN</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2017</td>
+    </tr>
+    <tr>
+      <th>986788</th>
+      <td>3165168</td>
+      <td>2015-02-05</td>
+      <td>18:30</td>
+      <td>QUEENS</td>
+      <td>11435</td>
+      <td>40.704201</td>
+      <td>-73.815244</td>
+      <td>40.7042012, -73.8152441</td>
+      <td>HILLSIDE AVENUE</td>
+      <td>QUEENS BOULEVARD</td>
+      <td>3.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>Physical Disability</td>
+      <td>NaN</td>
+      <td>FIRE TRUCK</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>2015</td>
+    </tr>
+    <tr>
+      <th>887112</th>
+      <td>3263493</td>
+      <td>2015-07-23</td>
+      <td>15:00</td>
+      <td>MANHATTAN</td>
+      <td>10013</td>
+      <td>40.717596</td>
+      <td>-73.996328</td>
+      <td>40.7175957, -73.9963277</td>
+      <td>HESTER STREET</td>
+      <td>ELIZABETH STREET</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Driver Inattention/Distraction</td>
+      <td>NaN</td>
+      <td>LARGE COM VEH(6 OR MORE TIRES)</td>
+      <td>LARGE COM VEH(6 OR MORE TIRES)</td>
+      <td>2015</td>
+    </tr>
+    <tr>
+      <th>1384105</th>
+      <td>127357</td>
+      <td>2013-03-03</td>
+      <td>4:00</td>
+      <td>BROOKLYN</td>
+      <td>11234</td>
+      <td>40.630506</td>
+      <td>-73.928115</td>
+      <td>40.6305063, -73.9281154</td>
+      <td>UTICA AVENUE</td>
+      <td>AVENUE I</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2013</td>
+    </tr>
+    <tr>
+      <th>514701</th>
+      <td>3633517</td>
+      <td>2017-03-17</td>
+      <td>8:30</td>
+      <td>BRONX</td>
+      <td>10470</td>
+      <td>40.896240</td>
+      <td>-73.872420</td>
+      <td>40.89624, -73.87242</td>
+      <td>EAST 233 STREET</td>
+      <td>ONEIDA AVENUE</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Other Vehicular</td>
+      <td>Obstruction/Debris</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>2017</td>
+    </tr>
+    <tr>
+      <th>1193298</th>
+      <td>51955</td>
+      <td>2014-02-03</td>
+      <td>13:40</td>
+      <td>MANHATTAN</td>
+      <td>10021</td>
+      <td>40.767803</td>
+      <td>-73.956000</td>
+      <td>40.7678026, -73.9559998</td>
+      <td>EAST 72 STREET</td>
+      <td>1 AVENUE</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Prescription Medication</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>NaN</td>
+      <td>2014</td>
+    </tr>
+    <tr>
+      <th>301621</th>
+      <td>3846369</td>
+      <td>2018-02-13</td>
+      <td>15:40</td>
+      <td>MANHATTAN</td>
+      <td>10027</td>
+      <td>40.812610</td>
+      <td>-73.956830</td>
+      <td>40.81261, -73.95683</td>
+      <td>AMSTERDAM AVENUE</td>
+      <td>LASALLE STREET</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Driver Inattention/Distraction</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>TK</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>1126638</th>
+      <td>346317</td>
+      <td>2014-06-04</td>
+      <td>3:12</td>
+      <td>QUEENS</td>
+      <td>11419</td>
+      <td>40.691406</td>
+      <td>-73.812719</td>
+      <td>40.6914065, -73.8127193</td>
+      <td>134 STREET</td>
+      <td>LIBERTY AVENUE</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2014</td>
+    </tr>
+    <tr>
+      <th>1319153</th>
+      <td>90620</td>
+      <td>2013-06-24</td>
+      <td>11:20</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>BRUCKNER BOULEVARD</td>
+      <td>WESTCHESTER AVENUE</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Failure to Yield Right-of-Way</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>2013</td>
+    </tr>
+    <tr>
+      <th>1268542</th>
+      <td>211783</td>
+      <td>2013-09-23</td>
+      <td>17:40</td>
+      <td>QUEENS</td>
+      <td>11435</td>
+      <td>40.703823</td>
+      <td>-73.808789</td>
+      <td>40.7038229, -73.8087892</td>
+      <td>89 AVENUE</td>
+      <td>SUTPHIN BOULEVARD</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Driver Inattention/Distraction</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>TAXI</td>
+      <td>2013</td>
+    </tr>
+    <tr>
+      <th>858199</th>
+      <td>3293593</td>
+      <td>2015-09-08</td>
+      <td>10:25</td>
+      <td>MANHATTAN</td>
+      <td>10001</td>
+      <td>40.750903</td>
+      <td>-73.998120</td>
+      <td>40.7509033, -73.9981196</td>
+      <td>WEST 30 STREET</td>
+      <td>9 AVENUE</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2015</td>
+    </tr>
+    <tr>
+      <th>930684</th>
+      <td>3220969</td>
+      <td>2015-05-14</td>
+      <td>22:57</td>
+      <td>MANHATTAN</td>
+      <td>10036</td>
+      <td>40.754841</td>
+      <td>-73.984119</td>
+      <td>40.7548409, -73.9841185</td>
+      <td>6 AVENUE</td>
+      <td>WEST 42 STREET</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2015</td>
+    </tr>
+    <tr>
+      <th>64824</th>
+      <td>4087502</td>
+      <td>2019-02-25</td>
+      <td>15:00</td>
+      <td>MANHATTAN</td>
+      <td>10026</td>
+      <td>40.803165</td>
+      <td>-73.952560</td>
+      <td>40.803165, -73.95256</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Station Wagon/Sport Utility Vehicle</td>
+      <td>Station Wagon/Sport Utility Vehicle</td>
+      <td>2019</td>
+    </tr>
+    <tr>
+      <th>252564</th>
+      <td>3893881</td>
+      <td>2018-05-04</td>
+      <td>14:04</td>
+      <td>BROOKLYN</td>
+      <td>11201</td>
+      <td>40.693783</td>
+      <td>-73.987206</td>
+      <td>40.693783, -73.987206</td>
+      <td>JAY STREET</td>
+      <td>MYRTLE AVENUE</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Passing Too Closely</td>
+      <td>NaN</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>425648</th>
+      <td>3723125</td>
+      <td>2017-07-31</td>
+      <td>13:29</td>
+      <td>BRONX</td>
+      <td>10463</td>
+      <td>40.880413</td>
+      <td>-73.906006</td>
+      <td>40.880413, -73.906006</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Following Too Closely</td>
+      <td>NaN</td>
+      <td>TAXI</td>
+      <td>PICK-UP TRUCK</td>
+      <td>2017</td>
+    </tr>
+    <tr>
+      <th>13953</th>
+      <td>4138073</td>
+      <td>2019-05-23</td>
+      <td>23:30</td>
+      <td>MANHATTAN</td>
+      <td>10001</td>
+      <td>40.755250</td>
+      <td>-73.998665</td>
+      <td>40.75525, -73.998665</td>
+      <td>10 AVENUE</td>
+      <td>WEST 35 STREET</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Failure to Yield Right-of-Way</td>
+      <td>NaN</td>
+      <td>Sedan</td>
+      <td>Station Wagon/Sport Utility Vehicle</td>
+      <td>2019</td>
+    </tr>
+    <tr>
+      <th>551426</th>
+      <td>3603842</td>
+      <td>2017-01-12</td>
+      <td>8:12</td>
+      <td>BROOKLYN</td>
+      <td>11204</td>
+      <td>40.624893</td>
+      <td>-73.984406</td>
+      <td>40.624893, -73.984406</td>
+      <td>18 AVENUE</td>
+      <td>55 STREET</td>
+      <td>2.0</td>
+      <td>0.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>Lost Consciousness</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2017</td>
+    </tr>
+    <tr>
+      <th>888714</th>
+      <td>3262465</td>
+      <td>2015-07-21</td>
+      <td>8:00</td>
+      <td>BROOKLYN</td>
+      <td>11230</td>
+      <td>40.618427</td>
+      <td>-73.956239</td>
+      <td>40.6184269, -73.9562388</td>
+      <td>AVENUE M</td>
+      <td>EAST 19 STREET</td>
+      <td>2.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>TAXI</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>2015</td>
+    </tr>
+    <tr>
+      <th>283069</th>
+      <td>3865212</td>
+      <td>2018-03-16</td>
+      <td>16:35</td>
+      <td>QUEENS</td>
+      <td>11435</td>
+      <td>40.687523</td>
+      <td>-73.798294</td>
+      <td>40.687523, -73.798294</td>
+      <td>146 STREET</td>
+      <td>111 AVENUE</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Failure to Yield Right-of-Way</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>93688</th>
+      <td>4066282</td>
+      <td>2019-01-04</td>
+      <td>14:40</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>40.767326</td>
+      <td>-73.929860</td>
+      <td>40.767326, -73.92986</td>
+      <td>21 STREET</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>Brakes Defective</td>
+      <td>NaN</td>
+      <td>Bus</td>
+      <td>Bus</td>
+      <td>2019</td>
+    </tr>
+    <tr>
+      <th>89337</th>
+      <td>4066226</td>
+      <td>2019-01-12</td>
+      <td>10:50</td>
+      <td>QUEENS</td>
+      <td>11421</td>
+      <td>40.691578</td>
+      <td>-73.865490</td>
+      <td>40.691578, -73.86549</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Other Vehicular</td>
+      <td>Driver Inattention/Distraction</td>
+      <td>Sedan</td>
+      <td>Taxi</td>
+      <td>2019</td>
+    </tr>
+    <tr>
+      <th>1439841</th>
+      <td>180144</td>
+      <td>2012-11-16</td>
+      <td>10:10</td>
+      <td>BROOKLYN</td>
+      <td>11216</td>
+      <td>40.684736</td>
+      <td>-73.950444</td>
+      <td>40.6847357, -73.9504443</td>
+      <td>MADISON STREET</td>
+      <td>NOSTRAND AVENUE</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>2012</td>
+    </tr>
+    <tr>
+      <th>810242</th>
+      <td>3341813</td>
+      <td>2015-11-24</td>
+      <td>18:10</td>
+      <td>STATEN ISLAND</td>
+      <td>10304</td>
+      <td>40.609057</td>
+      <td>-74.089225</td>
+      <td>40.6090573, -74.0892245</td>
+      <td>NARROWS ROAD NORTH</td>
+      <td>RHINE AVENUE</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2015</td>
+    </tr>
+    <tr>
+      <th>451271</th>
+      <td>3701234</td>
+      <td>2017-06-22</td>
+      <td>16:59</td>
+      <td>BROOKLYN</td>
+      <td>11232</td>
+      <td>40.665882</td>
+      <td>-73.996420</td>
+      <td>40.665882, -73.99642</td>
+      <td>3 AVENUE</td>
+      <td>18 STREET</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Driver Inattention/Distraction</td>
+      <td>NaN</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2017</td>
+    </tr>
+    <tr>
+      <th>875814</th>
+      <td>3275381</td>
+      <td>2015-08-11</td>
+      <td>9:20</td>
+      <td>BROOKLYN</td>
+      <td>11204</td>
+      <td>40.613839</td>
+      <td>-73.981436</td>
+      <td>40.6138389, -73.9814363</td>
+      <td>65 STREET</td>
+      <td>BAY PARKWAY</td>
+      <td>2.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>Failure to Yield Right-of-Way</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>OTHER</td>
+      <td>2015</td>
+    </tr>
+    <tr>
+      <th>148339</th>
+      <td>3998164</td>
+      <td>2018-10-11</td>
+      <td>15:30</td>
+      <td>QUEENS</td>
+      <td>11354</td>
+      <td>40.765360</td>
+      <td>-73.827870</td>
+      <td>40.76536, -73.82787</td>
+      <td>35 AVENUE</td>
+      <td>UNION STREET</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Passing Too Closely</td>
+      <td>NaN</td>
+      <td>Station Wagon/Sport Utility Vehicle</td>
+      <td>Station Wagon/Sport Utility Vehicle</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>1392852</th>
+      <td>23361</td>
+      <td>2013-02-13</td>
+      <td>0:45</td>
+      <td>MANHATTAN</td>
+      <td>10011</td>
+      <td>40.737361</td>
+      <td>-73.996839</td>
+      <td>40.7373607, -73.996839</td>
+      <td>WEST 14 STREET</td>
+      <td>AVENUE OF THE AMERICAS</td>
+      <td>4.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0</td>
+      <td>Driver Inattention/Distraction</td>
+      <td>NaN</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>TAXI</td>
+      <td>2013</td>
+    </tr>
+    <tr>
+      <th>68326</th>
+      <td>4083629</td>
+      <td>2019-02-19</td>
+      <td>8:41</td>
+      <td>BRONX</td>
+      <td>10462</td>
+      <td>40.833557</td>
+      <td>-73.857740</td>
+      <td>40.833557, -73.85774</td>
+      <td>WESTCHESTER AVENUE</td>
+      <td>PUGSLEY AVENUE</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Station Wagon/Sport Utility Vehicle</td>
+      <td>PK</td>
+      <td>2019</td>
+    </tr>
+    <tr>
+      <th>1334608</th>
+      <td>288328</td>
+      <td>2013-05-30</td>
+      <td>11:30</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>BAY STREET</td>
+      <td>VICTORY BOULEVARD</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>NaN</td>
+      <td>2013</td>
+    </tr>
+    <tr>
+      <th>795046</th>
+      <td>3355543</td>
+      <td>2015-12-18</td>
+      <td>11:45</td>
+      <td>BROOKLYN</td>
+      <td>11220</td>
+      <td>40.637452</td>
+      <td>-74.021954</td>
+      <td>40.6374517, -74.0219535</td>
+      <td>4 AVENUE</td>
+      <td>66 STREET</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Driver Inattention/Distraction</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>2015</td>
+    </tr>
+    <tr>
+      <th>1132519</th>
+      <td>341902</td>
+      <td>2014-05-25</td>
+      <td>22:30</td>
+      <td>QUEENS</td>
+      <td>11435</td>
+      <td>40.710282</td>
+      <td>-73.812544</td>
+      <td>40.710282, -73.8125436</td>
+      <td>85 AVENUE</td>
+      <td>144 STREET</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2014</td>
+    </tr>
+    <tr>
+      <th>1175331</th>
+      <td>44870</td>
+      <td>2014-03-08</td>
+      <td>13:13</td>
+      <td>MANHATTAN</td>
+      <td>10019</td>
+      <td>40.762342</td>
+      <td>-73.982352</td>
+      <td>40.7623421, -73.9823516</td>
+      <td>7 AVENUE</td>
+      <td>WEST 52 STREET</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Passenger Distraction</td>
+      <td>NaN</td>
+      <td>TAXI</td>
+      <td>LIVERY VEHICLE</td>
+      <td>2014</td>
+    </tr>
+    <tr>
+      <th>1398377</th>
+      <td>215317</td>
+      <td>2013-02-03</td>
+      <td>21:51</td>
+      <td>QUEENS</td>
+      <td>11385</td>
+      <td>40.706783</td>
+      <td>-73.911950</td>
+      <td>40.7067834, -73.9119503</td>
+      <td>HARMAN STREET</td>
+      <td>ONDERDONK AVENUE</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2013</td>
+    </tr>
+    <tr>
+      <th>1106944</th>
+      <td>554603</td>
+      <td>2014-07-06</td>
+      <td>11:30</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>LAFAYETTE AVENUE</td>
+      <td>HUTCHINSON RIVER PARKWAY</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2014</td>
+    </tr>
+    <tr>
+      <th>552351</th>
+      <td>3596257</td>
+      <td>2017-01-10</td>
+      <td>19:30</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>CHERRY STREET</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Turning Improperly</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>NaN</td>
+      <td>2017</td>
+    </tr>
+    <tr>
+      <th>1033775</th>
+      <td>2822145</td>
+      <td>2014-11-11</td>
+      <td>17:15</td>
+      <td>QUEENS</td>
+      <td>11434</td>
+      <td>40.687048</td>
+      <td>-73.792107</td>
+      <td>40.6870481, -73.7921066</td>
+      <td>155 STREET</td>
+      <td>LINDEN BOULEVARD</td>
+      <td>3.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>Driver Inattention/Distraction</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2014</td>
+    </tr>
+    <tr>
+      <th>1113943</th>
+      <td>357777</td>
+      <td>2014-06-25</td>
+      <td>9:40</td>
+      <td>QUEENS</td>
+      <td>11372</td>
+      <td>40.751200</td>
+      <td>-73.890261</td>
+      <td>40.7511996, -73.8902615</td>
+      <td>76 STREET</td>
+      <td>35 AVENUE</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>UNKNOWN</td>
+      <td>2014</td>
+    </tr>
+    <tr>
+      <th>784910</th>
+      <td>3365907</td>
+      <td>2016-01-06</td>
+      <td>16:00</td>
+      <td>BRONX</td>
+      <td>10451</td>
+      <td>40.823579</td>
+      <td>-73.914166</td>
+      <td>40.8235793, -73.914166</td>
+      <td>MELROSE AVENUE</td>
+      <td>EAST 160 STREET</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Driver Inattention/Distraction</td>
+      <td>Driver Inattention/Distraction</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>BUS</td>
+      <td>2016</td>
+    </tr>
+    <tr>
+      <th>565345</th>
+      <td>3582950</td>
+      <td>2016-12-19</td>
+      <td>20:50</td>
+      <td>QUEENS</td>
+      <td>11375</td>
+      <td>40.709873</td>
+      <td>-73.847244</td>
+      <td>40.709873, -73.847244</td>
+      <td>72 ROAD</td>
+      <td>METROPOLITAN AVENUE</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Passing or Lane Usage Improper</td>
+      <td>NaN</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2016</td>
+    </tr>
+    <tr>
+      <th>116194</th>
+      <td>4035248</td>
+      <td>2018-11-29</td>
+      <td>20:05</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>40.687565</td>
+      <td>-73.834410</td>
+      <td>40.687565, -73.83441</td>
+      <td>109 STREET</td>
+      <td>101 AVENUE</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Failure to Yield Right-of-Way</td>
+      <td>Unsafe Speed</td>
+      <td>Sedan</td>
+      <td>Sedan</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>1328317</th>
+      <td>250714</td>
+      <td>2013-06-09</td>
+      <td>11:30</td>
+      <td>QUEENS</td>
+      <td>11358</td>
+      <td>40.758527</td>
+      <td>-73.801402</td>
+      <td>40.7585272, -73.8014021</td>
+      <td>165 STREET</td>
+      <td>43 AVENUE</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>NaN</td>
+      <td>2013</td>
+    </tr>
+    <tr>
+      <th>994961</th>
+      <td>3156965</td>
+      <td>2015-01-20</td>
+      <td>20:10</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ATLANTIC AVENUE</td>
+      <td>VAN WYCK EXPRESSWAY</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Driver Inexperience</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>OTHER</td>
+      <td>2015</td>
+    </tr>
+    <tr>
+      <th>157884</th>
+      <td>3988480</td>
+      <td>2018-09-26</td>
+      <td>12:30</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>20 AVENUE</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>Following Too Closely</td>
+      <td>NaN</td>
+      <td>Sedan</td>
+      <td>Station Wagon/Sport Utility Vehicle</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>1247946</th>
+      <td>30749</td>
+      <td>2013-10-29</td>
+      <td>14:40</td>
+      <td>MANHATTAN</td>
+      <td>10016</td>
+      <td>40.751577</td>
+      <td>-73.982275</td>
+      <td>40.7515772, -73.982275</td>
+      <td>WEST 39 STREET</td>
+      <td>5 AVENUE</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>TAXI</td>
+      <td>TAXI</td>
+      <td>2013</td>
+    </tr>
+    <tr>
+      <th>224075</th>
+      <td>3922309</td>
+      <td>2018-06-16</td>
+      <td>20:00</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>40.731125</td>
+      <td>-74.004234</td>
+      <td>40.731125, -74.004234</td>
+      <td>MORTON STREET</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Passing or Lane Usage Improper</td>
+      <td>NaN</td>
+      <td>Van</td>
+      <td>Sedan</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>942884</th>
+      <td>3208814</td>
+      <td>2015-04-24</td>
+      <td>19:15</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>EAST KINGSBRIDGE ROAD</td>
+      <td>EAST FORDHAM ROAD</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Backing Unsafely</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2015</td>
+    </tr>
+    <tr>
+      <th>1023677</th>
+      <td>3127743</td>
+      <td>2014-11-28</td>
+      <td>14:00</td>
+      <td>MANHATTAN</td>
+      <td>10029</td>
+      <td>40.793818</td>
+      <td>-73.940106</td>
+      <td>40.7938182, -73.9401063</td>
+      <td>EAST 111 STREET</td>
+      <td>2 AVENUE</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Backing Unsafely</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>NaN</td>
+      <td>2014</td>
+    </tr>
+    <tr>
+      <th>467854</th>
+      <td>3681215</td>
+      <td>2017-05-29</td>
+      <td>13:47</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Driver Inattention/Distraction</td>
+      <td>Driver Inattention/Distraction</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2017</td>
+    </tr>
+    <tr>
+      <th>680448</th>
+      <td>3468390</td>
+      <td>2016-06-23</td>
+      <td>10:00</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>VAN WYCK EXPWY</td>
+      <td>NaN</td>
+      <td>2.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>Unsafe Lane Changing</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>NaN</td>
+      <td>2016</td>
+    </tr>
+    <tr>
+      <th>1190014</th>
+      <td>2927804</td>
+      <td>2014-02-09</td>
+      <td>17:50</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>NaN</td>
+      <td>2014</td>
+    </tr>
+    <tr>
+      <th>754818</th>
+      <td>3396203</td>
+      <td>2016-02-28</td>
+      <td>5:45</td>
+      <td>BROOKLYN</td>
+      <td>11211</td>
+      <td>40.713269</td>
+      <td>-73.962081</td>
+      <td>40.7132692, -73.9620814</td>
+      <td>BEDFORD AVENUE</td>
+      <td>SOUTH 2 STREET</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Outside Car Distraction</td>
+      <td>NaN</td>
+      <td>LIVERY VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2016</td>
+    </tr>
+    <tr>
+      <th>1459359</th>
+      <td>62385</td>
+      <td>2012-10-11</td>
+      <td>17:35</td>
+      <td>MANHATTAN</td>
+      <td>10025</td>
+      <td>40.803991</td>
+      <td>-73.960318</td>
+      <td>40.8039907, -73.9603176</td>
+      <td>WEST 113 STREET</td>
+      <td>MORNINGSIDE DRIVE</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Fatigued/Drowsy</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2012</td>
+    </tr>
+    <tr>
+      <th>880840</th>
+      <td>3270255</td>
+      <td>2015-08-02</td>
+      <td>0:28</td>
+      <td>BRONX</td>
+      <td>10468</td>
+      <td>40.864182</td>
+      <td>-73.901181</td>
+      <td>40.8641824, -73.9011815</td>
+      <td>DAVIDSON AVENUE</td>
+      <td>WEST 190 STREET</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Other Vehicular</td>
+      <td>Oversized Vehicle</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PICK-UP TRUCK</td>
+      <td>2015</td>
+    </tr>
+    <tr>
+      <th>739760</th>
+      <td>3411795</td>
+      <td>2016-03-24</td>
+      <td>9:05</td>
+      <td>BRONX</td>
+      <td>10472</td>
+      <td>40.829662</td>
+      <td>-73.856830</td>
+      <td>40.829662, -73.85683</td>
+      <td>PUGSLEY AVENUE</td>
+      <td>POWELL AVENUE</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2016</td>
+    </tr>
+    <tr>
+      <th>1217894</th>
+      <td>2992436</td>
+      <td>2013-12-19</td>
+      <td>19:23</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>40.722580</td>
+      <td>-73.940482</td>
+      <td>40.7225802, -73.9404817</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>Fatigued/Drowsy</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>2013</td>
+    </tr>
+    <tr>
+      <th>1164045</th>
+      <td>313179</td>
+      <td>2014-03-30</td>
+      <td>17:36</td>
+      <td>BROOKLYN</td>
+      <td>11237</td>
+      <td>40.692850</td>
+      <td>-73.903541</td>
+      <td>40.6928497, -73.9035413</td>
+      <td>IRVING AVENUE</td>
+      <td>DECATUR STREET</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2014</td>
+    </tr>
+    <tr>
+      <th>1297140</th>
+      <td>3442</td>
+      <td>2013-08-02</td>
+      <td>18:45</td>
+      <td>MANHATTAN</td>
+      <td>10013</td>
+      <td>40.720557</td>
+      <td>-74.003510</td>
+      <td>40.7205573, -74.0035102</td>
+      <td>CHURCH STREET</td>
+      <td>CANAL STREET</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>SMALL COM VEH(4 TIRES)</td>
+      <td>2013</td>
+    </tr>
+    <tr>
+      <th>537687</th>
+      <td>3610688</td>
+      <td>2017-02-06</td>
+      <td>8:58</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>40.849907</td>
+      <td>-73.852250</td>
+      <td>40.849907, -73.85225</td>
+      <td>MORRIS PARK AVENUE</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Driver Inattention/Distraction</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>2017</td>
+    </tr>
+    <tr>
+      <th>435348</th>
+      <td>3712409</td>
+      <td>2017-07-16</td>
+      <td>14:43</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>40.767204</td>
+      <td>-73.910095</td>
+      <td>40.767204, -73.910095</td>
+      <td>42 STREET</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2017</td>
+    </tr>
+    <tr>
+      <th>300575</th>
+      <td>3847131</td>
+      <td>2018-02-15</td>
+      <td>6:35</td>
+      <td>QUEENS</td>
+      <td>11418</td>
+      <td>40.697243</td>
+      <td>-73.813324</td>
+      <td>40.697243, -73.813324</td>
+      <td>94 AVENUE</td>
+      <td>VANWYCK EXPRESSWAY</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Other Vehicular</td>
+      <td>Failure to Yield Right-of-Way</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>NaN</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>819766</th>
+      <td>3331678</td>
+      <td>2015-11-09</td>
+      <td>14:58</td>
+      <td>BRONX</td>
+      <td>10471</td>
+      <td>40.906862</td>
+      <td>-73.904099</td>
+      <td>40.906862, -73.904099</td>
+      <td>RIVERDALE AVENUE</td>
+      <td>WEST 259 STREET</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>SMALL COM VEH(4 TIRES)</td>
+      <td>2015</td>
+    </tr>
+    <tr>
+      <th>1015484</th>
+      <td>3135576</td>
+      <td>2014-12-12</td>
+      <td>14:00</td>
+      <td>BROOKLYN</td>
+      <td>11238</td>
+      <td>40.687868</td>
+      <td>-73.968785</td>
+      <td>40.6878684, -73.9687846</td>
+      <td>LAFAYETTE AVENUE</td>
+      <td>VANDERBILT AVENUE</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Prescription Medication</td>
+      <td>NaN</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>2014</td>
+    </tr>
+    <tr>
+      <th>1496611</th>
+      <td>182763</td>
+      <td>2012-08-04</td>
+      <td>13:55</td>
+      <td>BROOKLYN</td>
+      <td>11221</td>
+      <td>40.686763</td>
+      <td>-73.932814</td>
+      <td>40.6867634, -73.9328143</td>
+      <td>MADISON STREET</td>
+      <td>STUYVESANT AVENUE</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>NaN</td>
+      <td>2012</td>
+    </tr>
+    <tr>
+      <th>422998</th>
+      <td>3725015</td>
+      <td>2017-08-04</td>
+      <td>16:15</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>VANWYCK EXPRESSWAY</td>
+      <td>LINDEN BOULEVARD</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2017</td>
+    </tr>
+    <tr>
+      <th>309079</th>
+      <td>3837982</td>
+      <td>2018-01-31</td>
+      <td>14:50</td>
+      <td>QUEENS</td>
+      <td>11358</td>
+      <td>40.765926</td>
+      <td>-73.789474</td>
+      <td>40.765926, -73.789474</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Glare</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>1096672</th>
+      <td>999502</td>
+      <td>2014-07-25</td>
+      <td>23:58</td>
+      <td>BROOKLYN</td>
+      <td>11217</td>
+      <td>40.687192</td>
+      <td>-73.974615</td>
+      <td>40.6871919, -73.9746155</td>
+      <td>LAFAYETTE AVENUE</td>
+      <td>SOUTH PORTLAND AVENUE</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>OTHER</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2014</td>
+    </tr>
+    <tr>
+      <th>511531</th>
+      <td>3637470</td>
+      <td>2017-03-22</td>
+      <td>8:50</td>
+      <td>BROOKLYN</td>
+      <td>11226</td>
+      <td>40.640823</td>
+      <td>-73.965310</td>
+      <td>40.640823, -73.96531</td>
+      <td>CORTELYOU ROAD</td>
+      <td>RUGBY ROAD</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2017</td>
+    </tr>
+    <tr>
+      <th>912251</th>
+      <td>3238539</td>
+      <td>2015-06-12</td>
+      <td>11:30</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>40.768877</td>
+      <td>-73.948972</td>
+      <td>40.7688772, -73.9489716</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Driver Inattention/Distraction</td>
+      <td>NaN</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2015</td>
+    </tr>
+    <tr>
+      <th>596727</th>
+      <td>3552631</td>
+      <td>2016-10-31</td>
+      <td>11:21</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>40.686400</td>
+      <td>-73.912690</td>
+      <td>40.6864, -73.91269</td>
+      <td>BUSHWICK AVENUE</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Following Too Closely</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2016</td>
+    </tr>
+    <tr>
+      <th>1302334</th>
+      <td>98052</td>
+      <td>2013-07-24</td>
+      <td>22:20</td>
+      <td>BRONX</td>
+      <td>10469</td>
+      <td>40.866574</td>
+      <td>-73.838753</td>
+      <td>40.866574, -73.8387529</td>
+      <td>EAST GUN HILL ROAD</td>
+      <td>BARTOW AVENUE</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2013</td>
+    </tr>
+    <tr>
+      <th>357426</th>
+      <td>3789948</td>
+      <td>2017-11-14</td>
+      <td>16:30</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>40.709095</td>
+      <td>-73.996220</td>
+      <td>40.709095, -73.99622</td>
+      <td>FDR DRIVE</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Failure to Yield Right-of-Way</td>
+      <td>NaN</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>2017</td>
+    </tr>
+    <tr>
+      <th>738603</th>
+      <td>3409155</td>
+      <td>2016-03-25</td>
+      <td>0:00</td>
+      <td>MANHATTAN</td>
+      <td>10023</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>WEST 72 STREET</td>
+      <td>CENTRAL PARK WEST</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Driver Inattention/Distraction</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2016</td>
+    </tr>
+    <tr>
+      <th>1430561</th>
+      <td>2912680</td>
+      <td>2012-12-04</td>
+      <td>18:15</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>40.887550</td>
+      <td>-73.815110</td>
+      <td>40.8875497, -73.8151098</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2012</td>
+    </tr>
+    <tr>
+      <th>217655</th>
+      <td>3930780</td>
+      <td>2018-06-25</td>
+      <td>16:30</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>40.738686</td>
+      <td>-73.816960</td>
+      <td>40.738686, -73.81696</td>
+      <td>REEVES AVENUE</td>
+      <td>61 ROAD</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Passing or Lane Usage Improper</td>
+      <td>Following Too Closely</td>
+      <td>Sedan</td>
+      <td>Sedan</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <th>1090889</th>
+      <td>1004016</td>
+      <td>2014-08-04</td>
+      <td>19:30</td>
+      <td>BROOKLYN</td>
+      <td>11215</td>
+      <td>40.673975</td>
+      <td>-73.985699</td>
+      <td>40.673975, -73.9856988</td>
+      <td>4 AVENUE</td>
+      <td>3 STREET</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>BICYCLE</td>
+      <td>2014</td>
+    </tr>
+    <tr>
+      <th>1453280</th>
+      <td>130746</td>
+      <td>2012-10-21</td>
+      <td>14:15</td>
+      <td>BROOKLYN</td>
+      <td>11218</td>
+      <td>40.636133</td>
+      <td>-73.972736</td>
+      <td>40.6361331, -73.9727361</td>
+      <td>OCEAN PARKWAY</td>
+      <td>DITMAS AVENUE</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2012</td>
+    </tr>
+    <tr>
+      <th>1358293</th>
+      <td>3107144</td>
+      <td>2013-04-20</td>
+      <td>7:00</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>40.766573</td>
+      <td>-73.888456</td>
+      <td>40.7665729, -73.888456</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Obstruction/Debris</td>
+      <td>NaN</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2013</td>
+    </tr>
+    <tr>
+      <th>690793</th>
+      <td>3458054</td>
+      <td>2016-06-08</td>
+      <td>11:40</td>
+      <td>QUEENS</td>
+      <td>11420</td>
+      <td>40.674896</td>
+      <td>-73.807450</td>
+      <td>40.674896, -73.80745</td>
+      <td>ROCKAWAY BOULEVARD</td>
+      <td>131 STREET</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Failure to Yield Right-of-Way</td>
+      <td>NaN</td>
+      <td>BICYCLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2016</td>
+    </tr>
+    <tr>
+      <th>1435567</th>
+      <td>269057</td>
+      <td>2012-11-24</td>
+      <td>0:45</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>111 AVENUE</td>
+      <td>143 STREET</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Outside Car Distraction</td>
+      <td>NaN</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>SPORT UTILITY / STATION WAGON</td>
+      <td>2012</td>
+    </tr>
+    <tr>
+      <th>770524</th>
+      <td>3380671</td>
+      <td>2016-01-30</td>
+      <td>17:00</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>BRUCKNER BOULEVARD</td>
+      <td>EAST 138 STREET</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Driver Inexperience</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2016</td>
+    </tr>
+    <tr>
+      <th>1358178</th>
+      <td>257024</td>
+      <td>2013-04-20</td>
+      <td>21:50</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>108 STREET</td>
+      <td>HORACE HARDING EXPRESSWAY</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Failure to Yield Right-of-Way</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2013</td>
+    </tr>
+    <tr>
+      <th>595327</th>
+      <td>3552351</td>
+      <td>2016-11-02</td>
+      <td>11:45</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>40.721497</td>
+      <td>-73.835310</td>
+      <td>40.721497, -73.83531</td>
+      <td>GRAND CENTRAL PKWY</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Following Too Closely</td>
+      <td>NaN</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>PASSENGER VEHICLE</td>
+      <td>2016</td>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>NYPD Collision Data Visualization</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!--CSS Link-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Navigation Section -->
+<!-- Navbar element -->
+<div class="navigation">
+   <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
+     <a class="navbar-brand" href="home.html">NYPD COLLISION DATA VISUALIZATION</a>
+     <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+       <ul class="navbar-nav ml-auto">
+         <li class="nav-item dropdown">
+           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="false" style="color: #DAE9EC">Plots
+           </a>
+           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						 <a class="dropdown-item" href="visualization-image-1.html">Injuries by Borough</a>
+             <a class="dropdown-item" href="visualization-image-2.html">Deaths by Borough</a>
+             <a class="dropdown-item" href="visualization-image-3.html">Injuries Trend by Year</a>
+             <a class="dropdown-item" href="visualization-image-4.html">Deaths Trend by Year</a>
+           </div>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="comparisons.html">Comparison</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="representative_data.html">Data</a>
+         </li>
+
+       </ul>
+     </div>
+   </nav>
+ </div>
+
+	    <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-8">
+                        <div class="box">
+                            <div class="header">
+                                <h1 class="title">Injuries by Borough</h1>
+                            </div>
+                            <div class="content">
+                               <img src="../Resources/Assets/Images/injuries_by_boro.png"  alt="Injuries by Borough" height="400" width="800" class="img-responsive">
+	                           <p class="category"> Since 2012 there have been over 90000 pedestrian and cyclists injuries/deaths resulting from a collision with a motor vehicle. Brooklyn remains the most dangerous borough in NYC for pedestrians and cylists, followed by Manhattan and Queens. This may be due, at least in part, to the higher population in Brooklyn (~2.5 million) compared to Manhattan for example (~1.6 million). However, this is likely not the only explanation since Queens with almost the same population (2.3 million) has about 2/3 the number of injuries/deaths.
+	                           </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <div class="box">
+                            <div class="header">
+                                <h3 class="title">Visualizations</h3>
+                            </div>
+                            <div class="content">
+															<a href="./visualization-image-1.html"><img src="../Resources/Assets/Images/injuries_by_boro.png" alt="Injuries by Borough" height="110" width="220"></a>
+ 			                       <a href="./visualization-image-2.html"><img src="../Resources/Assets/Images/deaths_by_boro.png" alt="Deaths by Borough" height="110" width="220"></a>
+ 			                       <a href="./visualization-image-3.html"><img src="../Resources/Assets/Images/injuries_trend_by_year.png" alt="Injuries Trend by Year" height="110" width="220"></a>
+ 			                       <a href="./visualization-image-4.html"><img src="../Resources/Assets/Images/deaths_trend_by_year.png" alt="Deaths Trend by Year" height="110" width="220"></a>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</html>
